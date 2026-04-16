@@ -5,247 +5,408 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Utkarsh Gupta | Portfolio</title>
     <link rel="stylesheet" href="style.css">
-    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <!-- Font Awesome Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Manrope:wght@400;500;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <script src="script.js" defer></script>
 </head>
 <body>
+    <div class="page-shell">
+        <header>
+            <nav class="container">
+                <a href="#home" class="logo">Utkarsh Gupta</a>
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#contact" class="btn-primary">Contact</a></li>
+                </ul>
+                <button class="hamburger" aria-label="Open navigation menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </nav>
+        </header>
 
-    <header>
-        <nav class="container">
-            <a href="#" class="logo">Utkarsh Gupta</a>
-            <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#education">Education</a></li>
-                <li><a href="#contact" class="btn-primary">Contact</a></li>
-            </ul>
-            <div class="hamburger">
-                <i class="fas fa-bars"></i>
-            </div>
-        </nav>
-    </header>
-
-    <main>
-        <!-- Hero Section -->
-        <section id="home" class="container">
-            <div class="hero-text">
-                <h1>Hi, I'm Utkarsh Gupta</h1>
-                <p class="subtitle">Information Technology Student & Aspiring Developer</p>
-                <div class="social-links">
-                    <a href="mailto:gutkarsh702@gmail.com" target="_blank" aria-label="Email"><i class="fas fa-envelope"></i></a>
-                    <a href="https://github.com/Utkarshgupta2027" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
-                    <a href="https://in.linkedin.com/in/utkarsh-gupta-5463b5299" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-                    <a href="tel:+917052050415" target="_blank" aria-label="Phone"><i class="fas fa-phone"></i></a>
-                </div>
-            </div>
-            <div class="hero-image">
-                <img src="profile.jpg" alt="Utkarsh Gupta">
-            </div>
-        </section>
-
-        <!-- About Section -->
-        <section id="about" class="container reveal">
-            <h2><i class="fas fa-user-tie"></i> Professional Summary</h2>
-            <p>Motivated and detail-oriented Information Technology student with hands-on experience in software development, web technologies, and database integration. A quick learner and effective team player with a strong foundation in object-oriented programming and problem-solving.</p>
-        </section>
-
-        <!-- Skills Section -->
-        <section id="skills" class="container reveal">
-            <h2><i class="fas fa-cogs"></i> Technical Skills</h2>
-            <div class="skills-grid">
-                <div class="skill-card">
-                    <h3>Programming Languages</h3>
-                    <ul><li><i class="fab fa-java"></i> Java</li><li><i class="fab fa-python"></i> Python</li><li><i class="fas fa-code"></i> C</li><li><i class="fab fa-js-square"></i> JavaScript</li></ul>
-                </div>
-                <div class="skill-card">
-                    <h3>Frameworks</h3>
-                    <ul><li><i class="fas fa-leaf"></i> Spring Boot</li><li><i class="fab fa-node-js"></i> Node.js</li></ul>
-                </div>
-                 <div class="skill-card">
-                    <h3>Web Technologies</h3>
-                    <ul><li><i class="fab fa-html5"></i> HTML5</li><li><i class="fab fa-css3-alt"></i> CSS3</li><li><i class="fab fa-bootstrap"></i> Bootstrap</li></ul>
-                </div>
-                <div class="skill-card">
-                    <h3>Databases</h3>
-                    <ul><li><i class="fas fa-database"></i> MySQL</li><li><i class="fas fa-fire"></i> Firebase</li></ul>
-                </div>
-                <div class="skill-card">
-                    <h3>Tools</h3>
-                    <ul><li><i class="fab fa-git-alt"></i> Git</li><li><i class="fab fa-github"></i> GitHub</li><li><i class="fas fa-code"></i> Visual Studio Code</li><li><i class="fas fa-code"></i> IntelliJ IDEA</li></ul>
-                </div>
-                <div class="skill-card">
-                    <h3>Core Skills</h3>
-                    <ul><li>Object-Oriented Programming</li><li>REST APIs</li><li>Debugging</li><li>Problem Solving</li></ul>
-                </div>
-            </div>
-        </section>
-
-        <!-- Project Experience Section -->
-        <section id="projects" class="container reveal">
-    <h2><i class="fas fa-project-diagram"></i> Project Experience</h2>
-
-            <!-- Payment Application -->
-    <div class="project-card">
-    <div class="project-header">
-        <h3>Payment System Web Application(PayFlow)</h3>
-        <span class="project-date">2026</span>
-    </div>
-    <p class="project-tech"><strong>Technologies:</strong> React.js, Spring Boot, MySQL, REST APIs, JWT, WebRTC (QR Scanner), Tailwind CSS</p>
-    <ul>
-        <li>Designed and developed a full-stack digital payment platform supporting secure P2P transactions, wallet management, and QR-based payments with a responsive UI.</li>
-        <li>Implemented JWT-based authentication, OTP verification, and backend validations, along with core fintech features like wallet system, bank integration, real-time balance updates, and transaction tracking.</li>
-        <li>Enhanced user experience with QR scanning, gamification (rewards & tiers), and an interactive analytics dashboard with customizable themes.</li>
-    </ul>
-    <p>
-        <a href="https://github.com/Utkarshgupta2027/PayFlow" target="_blank" class="btn-primary" style="display:inline-block;margin-top:1rem;">
-            <i class="fab fa-github"></i> View on GitHub
-        </a>
-    </p>
-</div>
-    <!-- Portfolio Website Card (NEW PROJECT) -->
-    <div class="project-card">
-        <div class="project-header">
-            <h3>Portfolio Website</h3>
-            <span class="project-date">2024</span>
-        </div>
-        <p class="project-tech"><strong>Technologies:</strong> HTML, CSS, JavaScript</p>
-        <ul>
-            <li>Designed and developed a personal portfolio website to showcase skills, education, and projects using a modern, dark, and highly responsive theme.</li>
-            <li>Implemented animated section reveals, mobile-first design, and a dynamic navigation bar to ensure usability across all devices.</li>
-            <li>Open-sourced the entire codebase for transparency and learning purposes.</li>
-        </ul>
-        <p>
-            <a href="https://github.com/Utkarshgupta2027/Portfolio.git.io" target="_blank" class="btn-primary" style="display:inline-block;margin-top:1rem;">
-    <i class="fab fa-github"></i> View on GitHub
-</a>
-        </p>
-    </div>
-
-     <!-- Portfolio Website Card (NEW PROJECT) -->
-    <div class="project-card">
-        <div class="project-header">
-            <h3>Java Swing To-Do List Application</h3>
-            <span class="project-date">2025</span>
-        </div>
-        <p class="project-tech"><strong>Technologies:</strong>Java, Java Swing, JAR Packaging</p>
-        <ul>
-            <li>Designed and developed a fully functional desktop task management application to provide a clean, intuitive, and platform-independent tool for managing daily tasks.
-
-</li>
-            <li>Implemented dynamic component rendering for adding and removing tasks in real-time, managed through a robust, event-driven architecture using Swing ActionListeners.</li>
-            <li>Packaged the final application into a cross-platform runnable JAR file, including custom icon resources, to ensure easy distribution and single-click execution on Windows, macOS, and Linux.</li>
-        </ul>
-        <p>
-            <a href="https://github.com/Utkarshgupta2027/To-Do-List" target="_blank" class="btn-primary" style="display:inline-block;margin-top:1rem;">
-    <i class="fab fa-github"></i> View on GitHub
-</a>
-        </p>
-    </div>
-
-             <!-- Portfolio Website Card (NEW PROJECT) -->
-    <div class="project-card">
-        <div class="project-header">
-            <h3>YouTube Video Downloader Application</h3>
-            <span class="project-date">2025</span>
-        </div>
-        <p class="project-tech"><strong>Technologies:</strong>Java, Java Swing, Python, JAR Packaging</p>
-        <ul>
-            <li>Designed and developed a cross-platform desktop application to provide a simple and efficient tool for downloading YouTube videos directly to the user’s desktop.
-
-</li>
-            <li>Implemented a user-friendly interface using Java Swing for intuitive video URL input and seamless interaction.
-</li>
-            <li>Developed a robust event-driven architecture where the GUI communicates with a Python backend for handling video downloads using libraries like pytube.        </ul>
-        <p>
-            <li>Enabled real-time status updates and progress feedback while downloading videos.
-Packaged the final application into a cross-platform runnable JAR file, including custom icon resources, allowing easy distribution and single-click execution on Windows, macOS, and Linux.</li>
-            <a href="https://github.com/Utkarshgupta2027/Youtube-Video-Downloader" target="_blank" class="btn-primary" style="display:inline-block;margin-top:1rem;">
-    <i class="fab fa-github"></i> View on GitHub
-</a>
-        </p>
-    </div>
-
-              <!-- Portfolio Website Card (NEW PROJECT) -->
-    <div class="project-card">
-        <div class="project-header">
-            <h3>Early Detection and Analysis of Lung Cancer Using Artificial Intelligence</h3>
-            <span class="project-date">2024</span>
-        </div>
-         <p class="project-tech"><strong>Conference:</strong>IEEE Conference</p>
-        <p class="project-tech"><strong>Technologies:</strong>Artificial Intelligence, Machine Learning, Medical Imaging, Multiparametric Data Analysis</p>
-        <ul>
-            <li>Conducted and presented a research study on the transformative impact of Artificial Intelligence (AI) in the early detection and analysis of lung cancer, focusing on improving diagnostic accuracy, efficiency, and early-stage identification.
-</li>
-            <li>Explored the historical evolution of AI applications in lung cancer diagnosis, from early attempts in the 1960s to modern advancements using chest CT scans and X-rays.</li>
-            <li>Demonstrated how AI-driven multiparametric clustering analysis enhances early-stage cancer screening, reducing false positives and improving detection precision.</li>
-            <li>Analyzed the role of AI in advancing personalized medicine by tailoring early detection and treatment strategies based on patient-specific data.</li>
-            <li>Highlighted the broader potential of AI in understanding the complex interactions between immune cells, tumor cells, and other cancer-related variables, contributing to predictive models for lung cancer.</li>
-            <li>Published in an IEEE Conference proceeding to showcase cutting-edge research in healthcare technology and AI applications.</li>
-        </ul>
-        <p>
-            <a href="https://ieeexplore.ieee.org/abstract/document/10486335" target="_blank" class="btn-primary" style="display:inline-block;margin-top:1rem;">
-    <i class="fa-brands fa-google-scholar"></i> View on Google Scholar
-</a>
-        </p>
-    </div>
-
-    <!-- <!-- (Your other project cards...) -->
-    
-</section>
-
-        <!-- Education Section -->
-        <section id="education" class="container reveal">
-            <h2><i class="fas fa-graduation-cap"></i> Educational Qualification</h2>
-            <div class="timeline">
-                <div class="timeline-item">
-                    <div class="timeline-content">
-                        <h3>Bachelor of Technology in Information Technology</h3>
-                        <p>Dronacharya Group of Institutions, Greater Noida</p>
-                        <span class="timeline-date">Expected 2027</span>
+        <main>
+            <section id="home" class="container hero-section">
+                <div class="hero-copy">
+                    <p class="eyebrow">Portfolio � Developer � Builder</p>
+                    <h1>Building modern, reliable, and visually polished digital experiences.</h1>
+                    <p class="hero-description">
+                        I�m Utkarsh Gupta, an Information Technology student focused on full-stack development,
+                        thoughtful user experiences, and software that feels reliable from the first click.
+                    </p>
+                    <div class="hero-actions">
+                        <a href="#projects" class="btn-primary">Explore Projects</a>
+                        <a href="#contact" class="btn-secondary">Let�s Connect</a>
+                    </div>
+                    <div class="hero-stats reveal">
+                        <div class="stat-card">
+                            <strong>5+</strong>
+                            <span>Projects built across web, Java, and AI</span>
+                        </div>
+                        <div class="stat-card">
+                            <strong>2027</strong>
+                            <span>B.Tech graduation target with strong hands-on focus</span>
+                        </div>
+                        <div class="stat-card">
+                            <strong>Full Stack</strong>
+                            <span>Frontend, backend, APIs, authentication, and databases</span>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="mailto:gutkarsh702@gmail.com" target="_blank" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                        <a href="https://github.com/Utkarshgupta2027" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="https://in.linkedin.com/in/utkarsh-gupta-5463b5299" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="tel:+917052050415" target="_blank" aria-label="Phone"><i class="fas fa-phone"></i></a>
                     </div>
                 </div>
-                <div class="timeline-item">
-                    <div class="timeline-content">
-                        <h3>Intermediate – Uttar Pradesh Board (73%)</h3>
-                        <p>G.D.N.D.S.N. Inter College, Karwi, Chitrakoot</p>
-                        <span class="timeline-date">2023</span>
+                <div class="hero-visual reveal">
+                    <div class="hero-image-wrap">
+                        <div class="orbit orbit-one"></div>
+                        <div class="orbit orbit-two"></div>
+                        <img src="profile.jpg" alt="Utkarsh Gupta">
+                    </div>
+                    <div class="hero-panel glass-card">
+                        <span class="panel-label">Current Focus</span>
+                        <h3>Frontend polish meets backend reliability</h3>
+                        <p>Building responsive interfaces, secure authentication flows, and scalable project foundations.</p>
                     </div>
                 </div>
-                <div class="timeline-item">
-                    <div class="timeline-content">
-                        <h3>High School - Uttar Pradesh Board (85%)</h3>
-                        <p>G.D.N.D.S.N. Inter College, Karwi, Chitrakoot</p>
-                        <span class="timeline-date">2021</span>
+            </section>
+
+            <section id="about" class="container reveal section-card">
+                <div class="section-heading">
+                    <p class="section-kicker">About Me</p>
+                    <h2><i class="fas fa-user-tie"></i> Professional Summary</h2>
+                </div>
+                <p>
+                    Motivated and detail-oriented Information Technology student with hands-on experience in software development,
+                    web technologies, and database integration. I enjoy turning ideas into usable products, learning quickly,
+                    and contributing as a dependable team player with a strong foundation in object-oriented programming and problem-solving.
+                </p>
+            </section>
+
+            <section id="skills" class="container reveal">
+                <div class="section-heading">
+                    <p class="section-kicker">Capabilities</p>
+                    <h2><i class="fas fa-cogs"></i> Technical Skills</h2>
+                </div>
+                <div class="skills-grid">
+                    <div class="skill-card glass-card">
+                        <h3>Programming Languages</h3>
+                        <ul>
+                            <li><i class="fab fa-java"></i> Java</li>
+                            <li><i class="fab fa-python"></i> Python</li>
+                            <li><i class="fas fa-code"></i> C</li>
+                            <li><i class="fab fa-js-square"></i> JavaScript</li>
+                        </ul>
+                    </div>
+                    <div class="skill-card glass-card">
+                        <h3>Frameworks</h3>
+                        <ul>
+                            <li><i class="fab fa-react"></i> React.js</li>
+                            <li><i class="fas fa-leaf"></i> Spring Boot</li>
+                        </ul>
+                    </div>
+                    <div class="skill-card glass-card">
+                        <h3>Web Technologies</h3>
+                        <ul>
+                            <li><i class="fab fa-html5"></i> HTML5</li>
+                            <li><i class="fab fa-css3-alt"></i> CSS3</li>
+                            <li><i class="fab fa-bootstrap"></i> Bootstrap</li>
+                            <li><i class="fas fa-wind"></i> Tailwind CSS</li>
+                        </ul>
+                    </div>
+                    <div class="skill-card glass-card">
+                        <h3>Databases</h3>
+                        <ul>
+                            <li><i class="fas fa-database"></i> MongoDB</li>
+                            <li><i class="fas fa-database"></i> MySQL</li>
+                        </ul>
+                    </div>
+                    <div class="skill-card glass-card">
+                        <h3>Tools</h3>
+                        <ul>
+                            <li><i class="fab fa-git-alt"></i> Git</li>
+                            <li><i class="fab fa-github"></i> GitHub</li>
+                            <li><i class="fas fa-code"></i> Visual Studio Code</li>
+                            <li><i class="fas fa-code"></i> IntelliJ IDEA</li>
+                        </ul>
+                    </div>
+                    <div class="skill-card glass-card">
+                        <h3>Core Skills</h3>
+                        <ul>
+                            <li>Object-Oriented Programming</li>
+                            <li>REST APIs</li>
+                            <li>Debugging</li>
+                            <li>Problem Solving</li>
+                        </ul>
                     </div>
                 </div>
+            </section>
+
+            <section id="projects" class="container reveal">
+                <div class="section-heading">
+                    <p class="section-kicker">Selected Work</p>
+                    <h2><i class="fas fa-project-diagram"></i> Project Experience</h2>
+                </div>
+
+                <div class="project-grid">
+                    <article class="project-card glass-card featured-project">
+                        <div class="project-preview payflow-preview" aria-hidden="true">
+                            <div class="preview-window">
+                                <div class="preview-topbar">
+                                    <span></span><span></span><span></span>
+                                </div>
+                                <div class="preview-body payflow-ui">
+                                    <div class="preview-sidebar">
+                                        <div class="preview-chip"></div>
+                                        <div class="preview-line short"></div>
+                                        <div class="preview-line"></div>
+                                        <div class="preview-line"></div>
+                                    </div>
+                                    <div class="preview-main">
+                                        <div class="preview-balance-card">
+                                            <small>Wallet Balance</small>
+                                            <strong>Rs. 48,920</strong>
+                                            <div class="preview-bars"><span></span><span></span><span></span><span></span></div>
+                                        </div>
+                                        <div class="preview-grid-two">
+                                            <div class="preview-mini-card qr-card"></div>
+                                            <div class="preview-mini-card list-card">
+                                                <div class="preview-line short"></div>
+                                                <div class="preview-line"></div>
+                                                <div class="preview-line mid"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="preview-hover-note">Secure payments, analytics, and wallet UI</div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-header">
+                                <div>
+                                    <span class="project-badge">Featured</span>
+                                    <h3>Payment System Web Application (PayFlow)</h3>
+                                </div>
+                                <span class="project-date">2026</span>
+                            </div>
+                            <p class="project-tech"><strong>Technologies:</strong> React.js, Spring Boot, MongoDB, REST APIs, JWT, WebRTC (QR Scanner), Tailwind CSS</p>
+                            <ul>
+                                <li>Designed and developed a full-stack digital payment platform supporting secure P2P transactions, wallet management, and QR-based payments with a responsive UI.</li>
+                                <li>Implemented JWT-based authentication, OTP verification, and backend validations, along with core fintech features like wallet system, bank integration, real-time balance updates, and transaction tracking.</li>
+                                <li>Enhanced user experience with QR scanning, gamification (rewards and tiers), and an interactive analytics dashboard with customizable themes.</li>
+                            </ul>
+                            <p>
+                                <a href="https://github.com/Utkarshgupta2027/PayFlow" target="_blank" class="btn-primary inline-btn">
+                                    <i class="fab fa-github"></i> View on GitHub
+                                </a>
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="project-card glass-card">
+                        <div class="project-preview portfolio-preview" aria-hidden="true">
+                            <div class="preview-window">
+                                <div class="preview-topbar">
+                                    <span></span><span></span><span></span>
+                                </div>
+                                <div class="preview-body single-screen">
+                                    <div class="preview-hero-strip"></div>
+                                    <div class="preview-grid-three">
+                                        <div class="preview-block tall"></div>
+                                        <div class="preview-block"></div>
+                                        <div class="preview-block"></div>
+                                    </div>
+                                    <div class="preview-line"></div>
+                                    <div class="preview-line mid"></div>
+                                </div>
+                            </div>
+                            <div class="preview-hover-note">Responsive portfolio layout with theme controls</div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-header">
+                                <h3>Portfolio Website</h3>
+                                <span class="project-date">2024</span>
+                            </div>
+                            <p class="project-tech"><strong>Technologies:</strong> HTML, CSS, JavaScript</p>
+                            <ul>
+                                <li>Designed and developed a personal portfolio website to showcase skills, education, and projects using a responsive and visually engaging interface.</li>
+                                <li>Implemented animated section reveals, mobile-friendly navigation, and an organized layout for better readability on every screen size.</li>
+                                <li>Open-sourced the entire codebase for transparency and learning purposes.</li>
+                            </ul>
+                            <p>
+                                <a href="https://github.com/Utkarshgupta2027/Portfolio.git.io" target="_blank" class="btn-primary inline-btn">
+                                    <i class="fab fa-github"></i> View on GitHub
+                                </a>
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="project-card glass-card">
+                        <div class="project-preview todo-preview" aria-hidden="true">
+                            <div class="preview-window">
+                                <div class="preview-topbar">
+                                    <span></span><span></span><span></span>
+                                </div>
+                                <div class="preview-body task-screen">
+                                    <div class="preview-task-row done"><span></span><span></span></div>
+                                    <div class="preview-task-row"><span></span><span></span></div>
+                                    <div class="preview-task-row done"><span></span><span></span></div>
+                                    <div class="preview-task-row"><span></span><span></span></div>
+                                </div>
+                            </div>
+                            <div class="preview-hover-note">Desktop task planner with quick interactions</div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-header">
+                                <h3>Java Swing To-Do List Application</h3>
+                                <span class="project-date">2025</span>
+                            </div>
+                            <p class="project-tech"><strong>Technologies:</strong> Java, Java Swing, JAR Packaging</p>
+                            <ul>
+                                <li>Designed and developed a fully functional desktop task management application with a clean and intuitive interface for managing daily tasks.</li>
+                                <li>Implemented dynamic component rendering for adding and removing tasks in real time through an event-driven Swing architecture.</li>
+                                <li>Packaged the final application into a cross-platform runnable JAR file with custom icon resources for easy distribution.</li>
+                            </ul>
+                            <p>
+                                <a href="https://github.com/Utkarshgupta2027/To-Do-List" target="_blank" class="btn-primary inline-btn">
+                                    <i class="fab fa-github"></i> View on GitHub
+                                </a>
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="project-card glass-card">
+                        <div class="project-preview youtube-preview" aria-hidden="true">
+                            <div class="preview-window">
+                                <div class="preview-topbar">
+                                    <span></span><span></span><span></span>
+                                </div>
+                                <div class="preview-body media-screen">
+                                    <div class="preview-video"></div>
+                                    <div class="preview-download-panel">
+                                        <div class="preview-line short"></div>
+                                        <div class="progress-track"><span></span></div>
+                                        <div class="preview-pill-row"><i></i><i></i><i></i></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="preview-hover-note">Video download flow with progress feedback</div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-header">
+                                <h3>YouTube Video Downloader Application</h3>
+                                <span class="project-date">2025</span>
+                            </div>
+                            <p class="project-tech"><strong>Technologies:</strong> Java, Java Swing, Python, JAR Packaging</p>
+                            <ul>
+                                <li>Designed and developed a cross-platform desktop application for downloading YouTube videos directly to the user�s desktop.</li>
+                                <li>Implemented a user-friendly Java Swing interface for smooth URL input and interaction.</li>
+                                <li>Built an event-driven workflow where the GUI communicates with a Python backend to manage downloads and provide real-time progress feedback.</li>
+                            </ul>
+                            <p>
+                                <a href="https://github.com/Utkarshgupta2027/Youtube-Video-Downloader" target="_blank" class="btn-primary inline-btn">
+                                    <i class="fab fa-github"></i> View on GitHub
+                                </a>
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="project-card glass-card">
+                        <div class="project-preview research-preview" aria-hidden="true">
+                            <div class="preview-window">
+                                <div class="preview-topbar">
+                                    <span></span><span></span><span></span>
+                                </div>
+                                <div class="preview-body research-screen">
+                                    <div class="scan-ring"></div>
+                                    <div class="scan-dot"></div>
+                                    <div class="preview-line"></div>
+                                    <div class="preview-line mid"></div>
+                                    <div class="preview-line short"></div>
+                                </div>
+                            </div>
+                            <div class="preview-hover-note">AI-driven medical imaging and analysis concept</div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-header">
+                                <h3>Early Detection and Analysis of Lung Cancer Using Artificial Intelligence</h3>
+                                <span class="project-date">2024</span>
+                            </div>
+                            <p class="project-tech"><strong>Conference:</strong> IEEE Conference</p>
+                            <p class="project-tech"><strong>Technologies:</strong> Artificial Intelligence, Machine Learning, Medical Imaging, Multiparametric Data Analysis</p>
+                            <ul>
+                                <li>Conducted and presented a research study on how AI can improve the early detection and analysis of lung cancer through stronger diagnostic accuracy and efficiency.</li>
+                                <li>Explored the historical evolution of AI applications in lung cancer diagnosis, from early attempts in the 1960s to modern work using chest CT scans and X-rays.</li>
+                                <li>Demonstrated how AI-driven multiparametric clustering analysis enhances early-stage screening by reducing false positives and improving detection precision.</li>
+                                <li>Published in an IEEE Conference proceeding to showcase current research in healthcare technology and AI applications.</li>
+                            </ul>
+                            <p>
+                                <a href="https://ieeexplore.ieee.org/abstract/document/10486335" target="_blank" class="btn-primary inline-btn">
+                                    <i class="fa-brands fa-google-scholar"></i> View on Google Scholar
+                                </a>
+                            </p>
+                        </div>
+                    </article>
+                </div>
+            </section>
+            <section id="education" class="container reveal">
+                <div class="section-heading">
+                    <p class="section-kicker">Journey</p>
+                    <h2><i class="fas fa-graduation-cap"></i> Educational Qualification</h2>
+                </div>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-content glass-card">
+                            <h3>Bachelor of Technology in Information Technology</h3>
+                            <p>Dronacharya Group of Institutions, Greater Noida</p>
+                            <span class="timeline-date">Expected 2027</span>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-content glass-card">
+                            <h3>Intermediate - Uttar Pradesh Board (73%)</h3>
+                            <p>G.D.N.D.S.N. Inter College, Karwi, Chitrakoot</p>
+                            <span class="timeline-date">2023</span>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-content glass-card">
+                            <h3>High School - Uttar Pradesh Board (85%)</h3>
+                            <p>G.D.N.D.S.N. Inter College, Karwi, Chitrakoot</p>
+                            <span class="timeline-date">2021</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="contact" class="container reveal section-card">
+                <div class="section-heading">
+                    <p class="section-kicker">Contact</p>
+                    <h2><i class="fas fa-paper-plane"></i> Get In Touch</h2>
+                </div>
+                <p>I�m currently seeking new opportunities. Feel free to reach out if you'd like to collaborate, hire, or connect.</p>
+                <div class="contact-info">
+                    <a href="mailto:gutkarsh702@gmail.com" class="contact-item"><i class="fas fa-envelope"></i> gutkarsh702@gmail.com</a>
+                    <a href="tel:+917052050415" class="contact-item"><i class="fas fa-phone"></i> +91 7052050415</a>
+                    <p class="contact-item"><i class="fas fa-map-marker-alt"></i> Greater Noida, India</p>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <div class="container">
+                <p>� 2026 Utkarsh Gupta. All Rights Reserved.</p>
             </div>
-        </section>
-
-        <!-- Contact Section -->
-        <section id="contact" class="container reveal">
-            <h2><i class="fas fa-paper-plane"></i> Get In Touch</h2>
-            <p>I'm currently seeking new opportunities. Feel free to reach out!</p>
-            <div class="contact-info">
-                <a href="mailto:gutkarsh702@gmail.com" class="contact-item"><i class="fas fa-envelope"></i> gutkarsh702@gmail.com</a>
-                <a href="tel:+917052050415" class="contact-item"><i class="fas fa-phone"></i> +91 7052050415</a>
-                <p class="contact-item"><i class="fas fa-map-marker-alt"></i> Greater Noida, India</p>
-            </div>
-        </section>
-
-    </main>
-
-    <footer>
-        <div class="container">
-            <p>© 2024 Utkarsh Gupta. All Rights Reserved.</p>
-        </div>
-    </footer>
-
+        </footer>
+    </div>
 </body>
 </html>
 
