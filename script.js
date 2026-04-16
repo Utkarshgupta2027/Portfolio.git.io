@@ -24,7 +24,8 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }, {
         root: null,
-        threshold: 0.15,
+        rootMargin: '0px 0px -8% 0px',
+        threshold: 0.01,
     });
 
     revealElements.forEach((element) => {
