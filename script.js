@@ -1,34 +1,38 @@
 document.addEventListener('DOMContentLoaded', () => {
+
+    // --- Hamburger Menu Logic ---
     const hamburger = document.querySelector('.hamburger');
     const navLinks = document.querySelector('.nav-links');
+
+    hamburger.addEventListener('click', () => {
+        navLinks.classList.toggle('active');
+    });
+
+    // Close menu when a link is clicked
+    document.querySelectorAll('.nav-links a').forEach(link => {
+        link.addEventListener('click', () => {
+            navLinks.classList.remove('active');
+        });
+    });
+
+    // --- Scroll Reveal Animation Logic ---
     const revealElements = document.querySelectorAll('.reveal');
 
-    if (hamburger && navLinks) {
-        hamburger.addEventListener('click', () => {
-            navLinks.classList.toggle('active');
-        });
-
-        document.querySelectorAll('.nav-links a').forEach((link) => {
-            link.addEventListener('click', () => {
-                navLinks.classList.remove('active');
-            });
-        });
-    }
-
     const revealObserver = new IntersectionObserver((entries, observer) => {
-        entries.forEach((entry) => {
+        entries.forEach(entry => {
             if (entry.isIntersecting) {
                 entry.target.classList.add('visible');
-                observer.unobserve(entry.target);
+                // Optional: Stop observing after it's visible to save resources
+                observer.unobserve(entry.target); 
             }
         });
     }, {
-        root: null,
-        rootMargin: '0px 0px -8% 0px',
-        threshold: 0.01,
+        root: null, // observes intersections relative to the viewport
+        threshold: 0.1, // trigger when 10% of the element is visible
     });
 
-    revealElements.forEach((element) => {
+    revealElements.forEach(element => {
         revealObserver.observe(element);
     });
+
 });
